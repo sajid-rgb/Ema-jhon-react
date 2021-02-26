@@ -1,0 +1,20 @@
+input{
+    width: 70%;
+    height: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.cartIcon{
+    margin-left: 50px;
+    color:white;
+    font-size: 20px;
+}
+.inputBox{
+    background-color:rgba(0, 0, 0, 0.788);
+    height: 60px;
+    position: relative;
+    bottom: 17px;
+
+
+}

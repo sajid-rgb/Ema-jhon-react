@@ -1,0 +1,51 @@
+.product-container{
+    display: flex;
+    width: 70%;
+    border-bottom: 3px solid lightgrey;
+}
+.product-container img{
+    margin-left: 20px;
+}
+.product-detail{
+    margin-left: 50px;
+    
+}
+.product-des{
+    display: flex;
+}
+.features{
+    margin-left: 100px;
+}
+.star{
+    color:gold;
+    font-weight: bold;
+}
+.fill{
+    color:gold;
+}
+
+.product-detail h5{
+    color: blue;
+    font-weight: 600;
+    font-size: 16px;
+}
+.product-detail p{
+    font-size: 18px;
+}
+.product-detail h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.product-detail button{
+    background-color:lightyellow;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.cartIcon{
+    margin-right: 0px;
+    
+}

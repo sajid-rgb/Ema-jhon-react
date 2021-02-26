@@ -1,0 +1,13 @@
+.main-div{
+    display: flex;
+}
+.cart{
+
+    width: 40%;
+    padding: 30px;
+    
+}
+.productDiv{
+    border: 2px solid lightgrey;
+    width: 60%;
+}
