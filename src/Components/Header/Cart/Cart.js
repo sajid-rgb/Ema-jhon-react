@@ -3,7 +3,9 @@ import React from 'react';
 import './Cart.css'
 const Cart = (props) => {
     const cart=props.cart;
-    const total = cart.reduce((total,price)=>total+price.price,0);
+    console.log(cart);
+    const {quantity,price} = cart;
+     const total = cart.reduce((total,price)=>total+price.price*price.quantity || 1,0);
     const shipping = cart.reduce((shipping,pr)=>shipping+pr.shipping,0);
     const shippingAndTotal=shipping+total;
     const tax= total/10;
@@ -17,7 +19,9 @@ const Cart = (props) => {
            <p>Total before tax:{shippingAndTotal.toFixed(2)}</p>
            <p>Estimated Tax: {tax.toFixed(2)}</p>
            <h1 className="grandTotal">Order Total:{grandTotal.toFixed(2)}</h1>
-           <button>Review your order</button>
+           {
+               props.children
+           }
         </div>
     );
 };
